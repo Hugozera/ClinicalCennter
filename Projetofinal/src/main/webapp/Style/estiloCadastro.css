@@ -1,0 +1,129 @@
+* a{
+    text-decoration: none;
+    color: black;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.topbar {
+    background-color: #52bf90;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #52bf90;
+    transition: left 0.3s ease;
+    z-index: 2;
+}
+.topbar, i:hover{
+    color: white;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+}
+.home-button{
+    margin-left: 80%;
+}
+
+.menu-toggle i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    color: #000;
+}
+
+.menu li:hover {
+    background-color: #fff;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}
+.menu.open {
+    left: 0;
+}
+
+.menu.open ~ .overlay {
+    display: block;
+}
+#cadastroPaciente {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilizando os campos de entrada e rótulos */
+.grupoForm {
+    margin-bottom: 15px;
+}
+
+.grupoForm label {
+    display: block;
+    font-weight: bold;
+}
+
+.grupoForm input[type="text"],
+.grupoForm input[type="password"],
+.grupoForm select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilizando os botões */
+.grupoForm input[type="reset"],
+.grupoForm input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.grupoForm input[type="reset"]:hover,
+.grupoForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
